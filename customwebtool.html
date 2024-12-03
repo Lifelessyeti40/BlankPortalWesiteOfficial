@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Tool builder</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="assets/css/customwebtool.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="assets/img/Company Logo.png" rel="icon">
+
+</head>
+<body>
+  <!-- Wrapper around Navbar to allow background color changes -->
+  <div id="navbar-wrapper">
+    <nav id="custom-navbar" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">My Site</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="service-details.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Content Wrapper for Flexbox Layout -->
+  <div class="main-content">
+
+    <!-- Main Content Section -->
+    <div id="custom-content" class="container text-center my-5">
+      <h1>Welcome to My Site</h1>
+      <p>Customize this section with text, images, and more!</p>
+    </div>
+  </div>
+
+<!-- About Us Section -->
+<div id="aboutUsSection" class="about-us-section">
+    <h2>Write about your company...</h2>
+    <div id="aboutUsEditable" class="about-us-editable" contenteditable="true">
+        <!-- Initially empty, users can type their content here -->
+    </div>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer id="custom-footer" class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 My Company. All rights reserved.</p>
+  </footer>
+
+  <!-- Sidebar (Customization Panel) -->
+  <div id="customization-panel" class="customization-panel">
+    <h3>Customize Your Page</h3>
+
+    <!--Background Customizer-->
+    <label for="backgroundImage">Upload Background Image:</label>
+<input type="file" id="backgroundImage" accept="image/*">
+
+<!-- Font Selection -->
+<div class="customization-section">
+    <h4>Choose Font</h4>
+    <label for="fontSelector">Select Font:</label>
+    <select id="fontSelector">
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="'Times New Roman', serif">Times New Roman</option>
+      <option value="'Courier New', monospace">Courier New</option>
+      <option value="'Roboto', sans-serif">Roboto</option>
+      <option value="'Georgia', serif">Georgia</option>
+    </select>
+  </div>
+  
+
+<!-- Button Customization -->
+<div class="customization-section">
+    <h4>Button Styles</h4>
+    
+    <!-- Button Background Color -->
+    <label for="buttonBackgroundColor">Button Background Color:</label>
+    <input type="color" id="buttonBackgroundColor" value="#007bff">
+    
+    <!-- Button Text Color -->
+<label for="buttonTextColor">Button Text Color:</label>
+<input type="color" id="buttonTextColor" value="#ffffff">
+
+    
+    <!-- Button Border Radius -->
+<label for="buttonBorderRadius">Button Border Radius:</label>
+<input type="range" id="buttonBorderRadius" min="0" max="50" value="5">
+
+  
+  <!-- Example Button to Preview Changes -->
+  <div class="button-preview">
+    <button id="customButton" class="btn-custom">Click Me!</button>
+  </div>
+  
+ <!-- Button Shadow Intensity -->
+<label for="buttonShadowIntensity">Button Shadow Intensity:</label>
+<input type="range" id="buttonShadowIntensity" min="0" max="10" value="0">
+
+
+    <!-- Navbar Customization -->
+    <div class="customization-section">
+      <h4>Navbar</h4>
+      <label for="navbarColor">Background Color:</label>
+      <input type="color" id="navbarColor" value="#ffffff">
+      <label for="navbarText">Logo Text:</label>
+      <input type="text" id="navbarText" value="My Site">
+    </div>
+      
+
+    <!-- Content Customization -->
+    <div class="customization-section">
+      <h4>Content</h4>
+      <label for="contentHeading">Heading Text:</label>
+      <input type="text" id="contentHeading" value="Welcome to My Site">
+      <label for="contentColor">Text Color:</label>
+      <input type="color" id="contentColor" value="#333333">
+    </div>
+
+
+    <!-- Footer Customization -->
+    <div class="customization-section">
+      <h4>Footer</h4>
+      <label for="footerColor">Background Color:</label>
+      <input type="color" id="footerColor" value="#333333">
+      <label for="footerText">Footer Text:</label>
+      <input type="text" id="footerText" value="&copy; 2024 My Company. All rights reserved.">
+    </div>
+  </div>
+
+  <!-- Script Files -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>

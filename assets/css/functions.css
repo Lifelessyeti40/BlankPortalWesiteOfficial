@@ -1,0 +1,101 @@
+/* Functions Page */
+
+/* Hero Section */
+.functions-hero {
+    background: linear-gradient(120deg, var(--accent-color), #007ba7);
+    color: var(--contrast-color);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .functions-hero h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  
+  .functions-hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .functions-hero .btn {
+    background-color: var(--contrast-color);
+    color: var(--accent-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .functions-hero .btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Functions Overview Section */
+  .functions-overview {
+    padding: 60px 20px;
+    background-color: var(--background-color);
+  }
+  
+  .function-box {
+    background-color: var(--surface-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .function-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .function-box .icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+  }
+  
+  .function-box h3 {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+    font-weight: bold;
+  }
+  
+  .function-box p {
+    font-size: 0.9rem;
+    color: var(--default-color);
+  }
+  
+  /* Call to Action Section */
+  .call-to-action {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .call-to-action p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .call-to-action .btn {
+    background: var(--contrast-color);
+    color: var(--accent-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-to-action .btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  

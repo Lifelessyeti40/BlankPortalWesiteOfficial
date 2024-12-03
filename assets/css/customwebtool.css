@@ -1,0 +1,185 @@
+/* Set up the body as a flex container */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body covers the full viewport height */
+  margin: 0;
+}
+
+/* Main content should expand to fill available space */
+.main-content {
+  flex: 1; /* Makes this element take up all available vertical space */
+}
+
+/* Customization Panel Styles */
+.customization-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #f4f6f8;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.customization-panel h3 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.customization-section {
+  margin-bottom: 20px;
+  padding: 20px; /* Increased padding for sections */
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.customization-section h4 {
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.customization-section label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px; /* Increased margin for label spacing */
+}
+
+.customization-section input[type="color"],
+.customization-section input[type="range"],
+.customization-section input[type="text"],
+.customization-section input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px; /* Increased spacing below each input */
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  transition: border-color 0.3s;
+}
+
+.customization-section input[type="color"] {
+  padding: 0;
+  height: 35px;
+  cursor: pointer;
+}
+
+.customization-section input[type="file"] {
+  padding: 4px; /* Adjust padding specifically for file inputs */
+  cursor: pointer;
+}
+
+.customization-section input[type="range"] {
+  cursor: pointer;
+}
+
+.customization-section input[type="text"]:focus,
+.customization-section input[type="color"]:focus,
+.customization-section input[type="range"]:focus,
+.customization-section input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.button-preview {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-custom {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#customButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff; /* Initial background color */
+  color: #ffffff; /* Initial text color */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); /* Initial shadow set to 0 */
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+.customization-section select {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  transition: border-color 0.3s;
+}
+
+.customization-section select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.navbar-brand{
+  padding-left: 20px; /* Adjust this value to move the text to the right */
+}
+
+.about-us-section {
+  width: 300px; /* Set a width for the section */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: move; /* Change cursor to indicate draggable */
+  position: absolute; /* Allow positioning */
+}
+
+.about-us-section h2 {
+  text-align: center;
+  color: #333;
+}
+
+.about-us-editable {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  overflow: auto;
+  outline: none;
+}
+
+
+
+
+
+
+
+
