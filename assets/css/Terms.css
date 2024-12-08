@@ -1,0 +1,175 @@
+/*--------------------------------------------------------------
+  Terms and Conditions
+--------------------------------------------------------------*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body covers full viewport height */
+    margin: 0; /* Remove default margin */
+    padding-top: 120px; /* Added padding to prevent content from being hidden under fixed header */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Space between logo and button */
+    align-items: center;
+}
+
+/* Home Button */
+.btn-home {
+    display: inline-block;
+    padding: 10px 28px;
+    background-color: #388da8; /* Updated to match your website's blue */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: auto; /* Align button to the far right */
+}
+
+.btn-home:hover {
+    background-color: #388da8; /* blue on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .sitename {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Main Content Area */
+.main-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px; /* Increased margin to account for the fixed header */
+}
+
+/* Section Heading */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #388da8;
+}
+
+/* Content Paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Legal Sections */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        margin-top: 140px; /* Adjusted for smaller headers on mobile */
+        padding: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    ul {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content {
+        margin-top: 100px; /* Adjusted margin for mobile view */
+        padding: 10px;
+    }
+}
