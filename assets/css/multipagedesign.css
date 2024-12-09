@@ -613,6 +613,66 @@ body {
         font-size: 12px; /* Reduced font size for buttons */
     }
 }
+
+
+/*--------------------------------------------------------------
+  # Call To Action Section
+  --------------------------------------------------------------*/
+
+  #cta {
+    padding: 50px 0;
+    background-color: var(--background-color);
+    text-align: center;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  #cta h2 {
+    font-size: 2rem;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+  }
+  
+  #cta p {
+    font-size: 1.2rem;
+    color: var(--default-color);
+    margin-bottom: 30px;
+  }
+  
+  #cta .btn-getstarted {
+    font-size: 1rem;
+    padding: 10px 30px;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+  
+  #cta .btn-getstarted:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2rem;
+    }
+  
+    #hero p {
+      font-size: 1rem;
+    }
+  
+    #addons .service-box {
+      padding: 20px 15px;
+    }
+  
+    #cta h2 {
+      font-size: 1.8rem;
+    }
+  
+    #cta p {
+      font-size: 1rem;
+    }
+  }
    
   /*--------------------------------------------------------------
   # Global Footer
@@ -978,7 +1038,7 @@ body {
 .btn-read-more {
   display: inline-block;
   padding: 10px 25px;
-  color: var(--contrast-color);
+  color: var(--contrast-color); /* Initial text color */
   background-color: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -992,6 +1052,7 @@ body {
 .btn-read-more:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
   transform: translateY(-3px);
+  color: var(--contrast-color); /* Keep text color white on hover */
 }
 
 
